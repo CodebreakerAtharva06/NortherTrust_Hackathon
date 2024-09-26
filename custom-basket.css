@@ -1,0 +1,228 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('back.avif');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+.custom-basket-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.custom-basket-section h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.base-currency-input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.base-currency-input-group label {
+  font-size: 1rem;
+  color: #34495e;
+  margin-right: 10px;
+}
+
+.base-currency-input-group select {
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ecf0f1;
+  transition: border-color 0.3s ease;
+}
+
+.base-currency-input-group select:focus {
+  border-color: #3498db;
+}
+
+.basket-input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.basket-input-group label {
+  font-size: 1rem;
+  color: #34495e;
+  margin-right: 10px;
+}
+
+.basket-input-group input,
+.basket-input-group select {
+  width: 200px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ecf0f1;
+  transition: border-color 0.3s ease;
+}
+
+.basket-input-group input:focus,
+.basket-input-group select:focus {
+  border-color: #3498db;
+}
+
+.basket-result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.basket-button,
+.add-currency-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.basket-button:hover,
+.add-currency-button:hover {
+  background-color: #2980b9;
+}
+
+.risk-indicator-section {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+.risk-indicator-section h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.risk-input-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.risk-input-group label {
+  font-size: 1rem;
+  color: #34495e;
+  margin-right: 10px;
+}
+
+.risk-indicator-section select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ecf0f1;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease;
+}
+
+.risk-indicator-section select:focus {
+  border-color: #3498db;
+}
+
+.risk-result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.risk-button {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.risk-button:hover {
+  background-color: #219653;
+}
+
+canvas {
+  width: 100% !important;
+  max-width: 100%;
+  height: 400px !important;
+}
+
+@media (max-width: 768px) {
+  .basket-input-group,
+  .risk-input-group,
+  .base-currency-input-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .base-currency-input-group {
+    margin-bottom: 10px;
+  }
+}

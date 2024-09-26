@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange Rate Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js" defer></script> <!-- Include the dashboard.js -->
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Exchange Rate Dashboard</h1>
+        <p>Welcome to the Currency Exchange Rate Dashboard. Use the options below to analyze exchange rates.</p>
+
+        <div>
+            <label for="startDate">Start Date:</label>
+            <input type="date" id="startDate" placeholder="Start Date">
+        </div>
+
+        <div>
+            <label for="endDate">End Date:</label>
+            <input type="date" id="endDate" placeholder="End Date">
+        </div>
+
+        <div>
+            <label for="currencySelect">Select Currency:</label>
+            <select id="currencySelect">
+                <!-- Currency options will be dynamically populated -->
+            </select>
+        </div>
+
+        <div>
+            <label for="periodSelect">Select Time Period:</label>
+            <select id="periodSelect">
+                <option value="weekly">Weekly</option>
+                <option value="monthly">Monthly</option>
+                <option value="quarterly">Quarterly</option>
+                <option value="yearly">Yearly</option>
+            </select>
+        </div>
+
+        <button id="fetchDataBtn">Fetch Exchange Rates</button>
+        <button id="printChartBtn">Print Chart</button>
+
+        <button id="customBasketBtn" class="red-button" onclick="location.href='custom-basket.html'">Go to Custom Basket</button>
+
+        <canvas id="exchangeRateChart" width="400" height="200"></canvas>
+        <div id="peakLowestDates"></div>
+    </div>
+</body>
+</html>

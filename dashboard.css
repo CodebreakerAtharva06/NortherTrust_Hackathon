@@ -1,0 +1,119 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('back.avif'); /* Set background image */
+  background-size: cover; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+/* Welcome Message */
+p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+select {
+  width: 100%; /* Full width */
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #dcdde1;
+  border-radius: 5px;
+  outline: none;
+  background-color: #ecf0f1;
+  transition: border-color 0.3s ease;
+  margin-bottom: 15px; /* Space between inputs */
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+  border-color: #3498db; /* Highlight color on focus */
+}
+
+/* Button Styling */
+button {
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+  margin: 10px auto; /* Center the button and add vertical margin */
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #2980b9;
+  transform: scale(1.05); /* Slightly scale the button on hover */
+}
+
+/* Red Button Styling */
+.red-button {
+  background-color: #e74c3c; /* Red background */
+}
+
+.red-button:hover {
+  background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Peak and Lowest Dates Section */
+#peakLowestDates {
+  margin-top: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  color: #e74c3c; /* Highlight color for emphasis */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .container {
+    width: 95%; /* Slightly reduce width for smaller screens */
+  }
+
+  h1 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  button {
+    width: 100%; /* Make button full-width on smaller screens */
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Currency Basket</title>
+    <link rel="stylesheet" href="custom-basket.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Custom Currency Basket</h1>
+        <div class="custom-basket-section">
+            <h2>Create Your Own Custom Currency Basket</h2>
+            <div class="base-currency-input-group">
+                <label for="baseCurrency">Select Base Currency:</label>
+                <select id="baseCurrency"></select>
+            </div>
+            <div id="basketContainer"></div>
+            <button id="addCurrencyBtn" class="add-currency-button">Add Currency</button>
+            <button id="calculateBasketBtn" class="basket-button">Calculate Basket Value</button>
+            <p id="basketResult" class="basket-result"></p>
+        </div>
+        <div class="risk-indicator-section">
+            <h2>Risk Indicator</h2>
+            <div class="risk-input-group">
+                <label for="currency1">Select First Currency:</label>
+                <select id="currency1"></select>
+            </div>
+            <div class="risk-input-group">
+                <label for="currency2">Select Second Currency:</label>
+                <select id="currency2"></select>
+            </div>
+            <button id="calculateRiskBtn" class="risk-button">Calculate Risk</button>
+            <p id="riskResult" class="risk-result"></p>
+            <canvas id="riskIndicatorChart"></canvas>
+        </div>
+        <div id="volatilityAssessment" class="volatility-assessment"></div>
+        <button id="goToCurrencyTableBtn" class="basket-button" onclick="location.href='currency_table.html'">View ISO Codes</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="custom-basket.js"></script>
+</body>
+</html>
